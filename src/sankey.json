@@ -1,0 +1,33 @@
+{
+    "nodes": [
+        {"node": 0, "name": "Afghanistan"},
+        {"node": 1, "name": "South Sudan"},
+        {"node": 2, "name": "Syria"},
+        {"node": 3, "name": "Asia and the Pacific"},
+        {"node": 4, "name": "West and Central Africa"},
+        {"node": 5, "name": "America"},
+        {"node": 6, "name": "Europe"},
+        {"node": 7, "name": "South Africa"},
+        {"node": 8, "name": "Middle East and North Africa"},
+        {"node": 9, "name": "East Africa"}
+    ],
+    "links": [
+        {"source": 0, "target": 3, "value": 489645},
+        {"source": 0, "target": 4, "value": 366257},
+        {"source": 0, "target": 5, "value": 343392},
+        {"source": 0, "target": 6, "value": 626879},
+        {"source": 0, "target": 7, "value": 433530},
+        {"source": 0, "target": 9, "value": 453166},
+        {"source": 1, "target": 3, "value": 456123},
+        {"source": 1, "target": 4, "value": 395712},
+        {"source": 1, "target": 5, "value": 524897},
+        {"source": 1, "target": 6, "value": 432901},
+        {"source": 1, "target": 9, "value": 132621},
+        {"source": 1, "target": 8, "value": 420505},
+        {"source": 2, "target": 4, "value": 1425953},
+        {"source": 2, "target": 5, "value": 634872},
+        {"source": 2, "target": 6, "value": 2567210},
+        {"source": 2, "target": 7, "value": 1379126},
+        {"source": 2, "target": 8, "value": 841704}
+    ]
+}
