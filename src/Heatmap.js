@@ -52,7 +52,7 @@ function init() {
     d3.csv("heatmap19802021.csv").then(function (csvData) {
         data = csvData;
         d3.csv("demographic.csv").then(function (csvDemographicData) {
-            demographicData = csvDemographicData; // Store the demographic data
+            demographicData = csvDemographicData; 
             d3.json("heatmap.json").then(function (jsonData) {
                 json = jsonData;
                 // Fit the map projection to the size of the SVG element
@@ -221,7 +221,7 @@ function init() {
                 }
             })
            
-            .style("stroke", "#333") // stroke color
+            .style("stroke", "#333") 
             .on("mouseover", function (event, d) {
              
                 d3.selectAll(".country")
@@ -268,8 +268,6 @@ function init() {
                     .attr("stroke-width", 2);
                 // Update the legend with the hovered country's name
                 updateLegend(d.properties.name);
-
-
                 // Show the area chart's SVG
                 areaChartSvg.style("opacity", 1);
                 areaLegendGroup.style("opacity", 1);
@@ -322,6 +320,7 @@ function init() {
                     // Hide the pie chart's SVG if no demographic data is available
                     pieChartSvg.style("opacity", 0);
                 }
+
                 var result = document.getElementById('area-chart-container')
                 result.classList.add('border-dashed')
                 result.classList.add('border-2')
@@ -358,6 +357,8 @@ function init() {
                 pieChartSvg.style("opacity", 1);
             });
 
+        
+
         //run the draw color hue legend 
         drawColorHueLegend(color);
 
@@ -390,7 +391,6 @@ function init() {
         }
     }
 }
-// Call the init function when the page loads
 window.onload = init;
 
 

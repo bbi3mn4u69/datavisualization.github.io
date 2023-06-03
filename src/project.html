@@ -49,35 +49,48 @@
         <div class="text-5xl font-lobster text-center justify-center">
             <p class="m-8"> Number of refugees migrating from a country</p>
         </div>
+        <div class="flex justify-center pb-1.5 text-xl">
+            Exploring the pattern and trend of the total numbers of refugees migrate from a specific country the world
+        </div>
+        <div class="text-center text-red-500">
+            <div class="pb-1 ">How to use: selected the country that you want to explore, selected the year using the year slider .</div>
+            <div> We can see the pattern and trend of data in the area maps, and the propotion in the pie chart</div>
+            
+        </div>
         <!-- lable and slide -->
 
-        <div class="pl-11">
-            <div id="map-and-chart-wrapper">
+        <div>
+            <div class="flex flex-row justify-center">
                 <!-- heatmaps area -->
-                <div class="border-dashed border-2 border-slate-700 m-5">
-                    <div id="color-hue-wrapper">
-                        <select id="color-hue-select">
-                            <option value="normal" id="normal">Normal view</option>
-                            <option value="color-blind" id="color-blind">Color-blind view</option>
-                        </select>
-                    </div>
-                    <div id="heatmap-container"></div>
-                    <div id="heatmap-container">
-                        <div class="pl-3">
-                            <label for="year-slider" class=" mb-2 text-gray-900 font-bold text-xs"> Year: <span
-                                    id="year-display"></span> </label>
-
-                            <input type="range" id="year-slider" min="1980" max="2021" value="2021"
-                                class=" h-2 bg-gray-200 rounded-lg cursor-pointer" style="width: 800px;">
+                <div>
+                    <div class="border-dashed border-2 border-slate-700 m-5">
+                        <div id="color-hue-wrapper">
+                            <select id="color-hue-select">
+                                <option value="normal" id="normal">Normal view</option>
+                                <option value="color-blind" id="color-blind">Color-blind view</option>
+                            </select>
+                        </div>
+                        <div id="heatmap-container"></div>
+                        <div id="heatmap-container">
+                            <div class="pl-3">
+                                <label for="year-slider" class=" mb-2 text-gray-900 font-bold text-xs"> Year: <span
+                                        id="year-display"></span> </label>
+    
+                                <input type="range" id="year-slider" min="1980" max="2021" value="2021"
+                                    class=" h-2 bg-gray-200 rounded-lg cursor-pointer" style="width: 800px;">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col w-full">
-                    <div>
-                        <div id="area-chart-container" class=""></div>
-                    </div>
-                    <div>
-                        <div id="pie-chart-container" class=""></div>
+                <!-- area chart and pie chart -->
+                <div>
+                    <div class="flex flex-col w-full">
+                        <div>
+                            <div id="area-chart-container" class=""></div>
+                        </div>
+                        <div>
+                            <div id="pie-chart-container" class=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
